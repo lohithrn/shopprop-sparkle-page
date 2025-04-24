@@ -46,8 +46,30 @@ const Index = () => {
                 Reimagined.
               </h1>
 
+              {/* Search Bar */}
+              <div className="mb-4">
+                <div className="flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
+                  <Search className="h-4 w-4 sm:h-5 sm:w-5 text-white/70 ml-4" />
+                  <input 
+                    type="text" 
+                    placeholder="Search properties..." 
+                    className="bg-transparent border-none outline-none flex-1 px-4 text-sm sm:text-base text-white placeholder-white/70"
+                  />
+                  <Button className="rounded-full bg-white text-[#1A659E] hover:bg-white/90 text-sm sm:text-base">
+                    Search
+                  </Button>
+                </div>
+              </div>
+
+              {/* Platform Description */}
+              <div className="max-w-2xl mb-8">
+                <p className="text-xs sm:text-sm md:text-base text-[#E2F0FF]/90">
+                  One platform. Two powerful choices designed for your success in the modern real estate market.
+                </p>
+              </div>
+
               {/* Pricing Plans */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Free Plan */}
                 <div className="bg-white/10 backdrop-blur-md rounded-xl p-4">
                   <div className="flex items-center gap-2 mb-3">
@@ -94,28 +116,6 @@ const Index = () => {
                     Get Premium
                   </Button>
                 </div>
-              </div>
-
-              {/* Search Bar */}
-              <div className="mt-8">
-                <div className="flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
-                  <Search className="h-4 w-4 sm:h-5 sm:w-5 text-white/70 ml-4" />
-                  <input 
-                    type="text" 
-                    placeholder="Search properties..." 
-                    className="bg-transparent border-none outline-none flex-1 px-4 text-sm sm:text-base text-white placeholder-white/70"
-                  />
-                  <Button className="rounded-full bg-white text-[#1A659E] hover:bg-white/90 text-sm sm:text-base">
-                    Search
-                  </Button>
-                </div>
-              </div>
-
-              {/* Platform Description */}
-              <div className="max-w-2xl mt-4">
-                <p className="text-xs sm:text-sm md:text-base text-[#E2F0FF]/90">
-                  One platform. Two powerful choices designed for your success in the modern real estate market.
-                </p>
               </div>
             </div>
 
