@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { BadgeDollarSign } from 'lucide-react';
-import { ResponsiveContainer, ScatterChart, Scatter, ZAxis, Tooltip } from 'recharts';
+import { ResponsiveContainer, ScatterChart, Scatter, ZAxis, Tooltip, Cell } from 'recharts';
 
 interface BubbleData {
   value: number;
@@ -56,7 +56,7 @@ const SavingsBubbleChart = () => {
                   fill="#fff"
                 >
                   {bubbleData.map((entry, index) => (
-                    <cell key={index} fill={entry.fill} />
+                    <Cell key={index} fill={entry.fill} />
                   ))}
                 </Scatter>
               </ScatterChart>
