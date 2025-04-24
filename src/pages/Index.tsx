@@ -56,7 +56,7 @@ const Index = () => {
 
             {/* Platform Description */}
             <div className="max-w-2xl mt-4">
-              <p className="text-base md:text-lg text-[#E2F0FF]/90 text-center">
+              <p className="text-base md:text-lg text-[#E2F0FF]/90">
                 One platform. Two powerful choices designed for your success in the modern real estate market.
               </p>
             </div>
