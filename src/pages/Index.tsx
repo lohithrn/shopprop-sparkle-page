@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -11,9 +12,9 @@ import {
   Wallet,
   BarChart4,
   Wrench,
-  Phone
+  Phone,
+  ShieldCheck
 } from "lucide-react";
-import PricingSection from "@/components/PricingSection";
 
 const Index = () => {
   const handleExternalLink = () => {
@@ -34,7 +35,7 @@ const Index = () => {
       {/* Hero Section with Diagonal Design */}
       <div className="relative h-screen">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] transform -skew-y-6 origin-top-left z-0" />
-        <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
+        <div className="relative z-10 container mx-auto px-4 h-full py-12">
           <div className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
             <div className="text-white">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -44,7 +45,57 @@ const Index = () => {
                 </span>{" "}
                 Reimagined.
               </h1>
-              
+
+              {/* Pricing Plans */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                {/* Free Plan */}
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Star className="h-5 w-5 text-white" />
+                    <h3 className="text-lg font-semibold">Basic</h3>
+                  </div>
+                  <p className="text-2xl font-bold mb-3">Free <span className="text-sm font-normal">forever</span></p>
+                  <ul className="space-y-2 mb-4">
+                    <li className="flex items-center gap-2">
+                      <ShieldCheck className="h-4 w-4" />
+                      <span className="text-sm">Basic property listings</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <ShieldCheck className="h-4 w-4" />
+                      <span className="text-sm">Standard support</span>
+                    </li>
+                  </ul>
+                  <Button className="w-full bg-white text-[#1A659E] hover:bg-white/90">
+                    Get Started
+                  </Button>
+                </div>
+
+                {/* Premium Plan */}
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 relative">
+                  <div className="absolute -top-2 right-2 bg-white text-[#1A659E] px-2 py-0.5 rounded-full text-xs font-medium">
+                    Popular
+                  </div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <BadgeDollarSign className="h-5 w-5 text-white" />
+                    <h3 className="text-lg font-semibold">Premium</h3>
+                  </div>
+                  <p className="text-2xl font-bold mb-3">$99 <span className="text-sm font-normal">/month</span></p>
+                  <ul className="space-y-2 mb-4">
+                    <li className="flex items-center gap-2">
+                      <ShieldCheck className="h-4 w-4" />
+                      <span className="text-sm">Unlimited listings</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <ShieldCheck className="h-4 w-4" />
+                      <span className="text-sm">Priority support 24/7</span>
+                    </li>
+                  </ul>
+                  <Button className="w-full bg-[#1A659E] text-white border border-white hover:bg-[#1A659E]/90">
+                    Get Premium
+                  </Button>
+                </div>
+              </div>
+
               {/* Search Bar */}
               <div className="mt-8">
                 <div className="flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
