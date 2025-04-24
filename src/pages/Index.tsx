@@ -36,15 +36,29 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] transform -skew-y-6 origin-top-left z-0" />
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-4xl mx-auto text-white">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Real Estate, <br />
-              <span className="text-[#E2F0FF]">Reimagined.</span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Real Estate, Reimagined.
             </h1>
             
             <div className="max-w-2xl">
               <p className="text-xl md:text-2xl mb-8 text-[#E2F0FF]/90">
                 One platform. Two powerful choices designed for your success in the modern real estate market.
               </p>
+            </div>
+
+            {/* Search Bar */}
+            <div className="mt-8">
+              <div className="flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
+                <Search className="h-5 w-5 text-white/70 ml-4" />
+                <input 
+                  type="text" 
+                  placeholder="Search properties..." 
+                  className="bg-transparent border-none outline-none flex-1 px-4 text-white placeholder-white/70"
+                />
+                <Button className="rounded-full bg-white text-[#1A659E] hover:bg-white/90">
+                  Search
+                </Button>
+              </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mt-12">
@@ -91,21 +105,6 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
-            </div>
-
-            {/* Search Bar */}
-            <div className="mt-12">
-              <div className="flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
-                <Search className="h-5 w-5 text-white/70 ml-4" />
-                <input 
-                  type="text" 
-                  placeholder="Search properties..." 
-                  className="bg-transparent border-none outline-none flex-1 px-4 text-white placeholder-white/70"
-                />
-                <Button className="rounded-full bg-white text-[#1A659E] hover:bg-white/90">
-                  Search
-                </Button>
-              </div>
             </div>
           </div>
         </div>
@@ -157,3 +156,4 @@ const Index = () => {
 };
 
 export default Index;
+
