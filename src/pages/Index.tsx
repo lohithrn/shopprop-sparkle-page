@@ -36,7 +36,7 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-4xl mx-auto text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight truncate">
-              Real Estate, Reimagined.
+              Real Estate Comission Reimagined.
             </h1>
             
             {/* Search Bar */}
