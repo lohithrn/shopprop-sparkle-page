@@ -66,30 +66,38 @@ const Index = () => {
                 </div>
                 <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
                   <Button 
-                    className="bg-white/90 
+                    className="bg-[linear-gradient(to_right,_#ffffff_0%,_#f8f9fa_100%)] 
                                text-[#1A659E] 
-                               hover:bg-white 
-                               flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base
+                               hover:bg-[linear-gradient(to_right,_#f8f9fa_0%,_#ffffff_100%)] 
+                               flex items-center justify-center gap-2
+                               px-4 sm:px-6 md:px-8 
+                               py-2 sm:py-3 md:py-4 
+                               rounded-xl 
+                               text-xs sm:text-sm md:text-base
                                shadow-[0_4px_6px_rgba(26,101,158,0.2)] 
                                hover:shadow-[0_6px_8px_rgba(26,101,158,0.3)]
                                transition-all duration-300
-                               w-full sm:w-auto
+                               w-full sm:w-auto min-w-[120px] sm:min-w-[160px] md:min-w-[180px]
                                border border-[#1A659E]/10"
                   >
-                    <ShoppingCart className="h-5 w-5 sm:h-6 sm:w-6 mr-2 text-[#1A659E]" /> Start Buying
+                    <ShoppingCart className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-[#1A659E]" /> Start Buying
                   </Button>
                   <Button 
-                    className="bg-white/90 
+                    className="bg-[linear-gradient(to_right,_#ffffff_0%,_#f8f9fa_100%)] 
                                text-[#1EAEDB] 
-                               hover:bg-white 
-                               flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base
+                               hover:bg-[linear-gradient(to_right,_#f8f9fa_0%,_#ffffff_100%)] 
+                               flex items-center justify-center gap-2
+                               px-4 sm:px-6 md:px-8 
+                               py-2 sm:py-3 md:py-4 
+                               rounded-xl 
+                               text-xs sm:text-sm md:text-base
                                shadow-[0_4px_6px_rgba(30,174,219,0.2)] 
                                hover:shadow-[0_6px_8px_rgba(30,174,219,0.3)]
                                transition-all duration-300
-                               w-full sm:w-auto
+                               w-full sm:w-auto min-w-[120px] sm:min-w-[160px] md:min-w-[180px]
                                border border-[#1EAEDB]/10"
                   >
-                    <HandCoins className="h-5 w-5 sm:h-6 sm:w-6 mr-2 text-[#1EAEDB]" /> Start Selling
+                    <HandCoins className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-[#1EAEDB]" /> Start Selling
                   </Button>
                 </div>
               </div>
