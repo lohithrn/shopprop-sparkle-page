@@ -74,54 +74,58 @@ const Index = () => {
           </div>
 
           {/* Bottom Section - 60vh */}
-          <div className="h-[60vh] grid md:grid-cols-2 gap-8 items-center px-4">
+          <div className="h-[60vh] grid md:grid-cols-2 gap-8 items-start">
             {/* Pricing Plans */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-full">
+            <div className="h-full grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Free Plan */}
-              <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 h-full text-white">
-                <div className="flex items-center gap-2 mb-3">
-                  <Star className="h-5 w-5 text-white" />
-                  <h3 className="text-lg font-semibold text-white">Freemium</h3>
+              <div className="h-full bg-white/10 backdrop-blur-md rounded-xl p-4 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <Star className="h-5 w-5 text-white" />
+                    <h3 className="text-lg font-semibold text-white">Freemium</h3>
+                  </div>
+                  <p className="text-2xl font-bold mb-3 text-white">Free <span className="text-sm font-normal">forever</span></p>
+                  <ul className="space-y-2 mb-4">
+                    <li className="flex items-center gap-2 text-white">
+                      <ShieldCheck className="h-4 w-4 text-white" />
+                      <span className="text-sm text-white">Basic property listings</span>
+                    </li>
+                    <li className="flex items-center gap-2 text-white">
+                      <ShieldCheck className="h-4 w-4 text-white" />
+                      <span className="text-sm text-white">Standard support</span>
+                    </li>
+                  </ul>
                 </div>
-                <p className="text-2xl font-bold mb-3 text-white">Free <span className="text-sm font-normal">forever</span></p>
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-center gap-2 text-white">
-                    <ShieldCheck className="h-4 w-4 text-white" />
-                    <span className="text-sm text-white">Basic property listings</span>
-                  </li>
-                  <li className="flex items-center gap-2 text-white">
-                    <ShieldCheck className="h-4 w-4 text-white" />
-                    <span className="text-sm text-white">Standard support</span>
-                  </li>
-                </ul>
                 <Button className="w-full bg-white text-[#1A659E] hover:bg-white/90">
                   Get Started
                 </Button>
               </div>
 
               {/* Premium Plan */}
-              <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 relative h-full text-white">
-                <div className="absolute -top-2 right-2 bg-white text-[#1A659E] px-2 py-0.5 rounded-full text-xs font-medium">
-                  Popular
+              <div className="h-full bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 relative flex flex-col justify-between">
+                <div>
+                  <div className="absolute -top-2 right-2 bg-white text-[#1A659E] px-2 py-0.5 rounded-full text-xs font-medium">
+                    Popular
+                  </div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <BadgeDollarSign className="h-5 w-5 text-white" />
+                    <h3 className="text-lg font-semibold text-white">Premium</h3>
+                  </div>
+                  <ul className="space-y-2 mb-4">
+                    <li className="flex items-center gap-2 text-white">
+                      <ShieldCheck className="h-4 w-4 text-white" />
+                      <span className="text-sm text-white">Full-Service Support</span>
+                    </li>
+                    <li className="flex items-center gap-2 text-white">
+                      <ShieldCheck className="h-4 w-4 text-white" />
+                      <span className="text-sm text-white">Big Buyer Rebates</span>
+                    </li>
+                    <li className="flex items-center gap-2 text-white">
+                      <ShieldCheck className="h-4 w-4 text-white" />
+                      <span className="text-sm text-white">Lowest Seller Fees</span>
+                    </li>
+                  </ul>
                 </div>
-                <div className="flex items-center gap-2 mb-3">
-                  <BadgeDollarSign className="h-5 w-5 text-white" />
-                  <h3 className="text-lg font-semibold text-white">Premium</h3>
-                </div>
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-center gap-2 text-white">
-                    <ShieldCheck className="h-4 w-4 text-white" />
-                    <span className="text-sm text-white">Full-Service Support</span>
-                  </li>
-                  <li className="flex items-center gap-2 text-white">
-                    <ShieldCheck className="h-4 w-4 text-white" />
-                    <span className="text-sm text-white">Big Buyer Rebates</span>
-                  </li>
-                  <li className="flex items-center gap-2 text-white">
-                    <ShieldCheck className="h-4 w-4 text-white" />
-                    <span className="text-sm text-white">Lowest Seller Fees</span>
-                  </li>
-                </ul>
                 <Button className="w-full bg-[#1A659E] text-white border border-white hover:bg-[#1A659E]/90">
                   Get Premium
                 </Button>
@@ -129,13 +133,15 @@ const Index = () => {
             </div>
 
             {/* Image and Buttons Section */}
-            <div className="relative flex flex-col items-center h-full">
-              <img 
-                src="/lovable-uploads/1e43e983-c56e-4f84-9d10-c03b5bd71f42.png" 
-                alt="Happy homeowners and real estate agents" 
-                className="rounded-lg shadow-xl w-full h-[70%] object-cover mb-8"
-              />
-              <div className="flex flex-wrap gap-4 justify-center">
+            <div className="h-full flex flex-col">
+              <div className="flex-1 relative">
+                <img 
+                  src="/lovable-uploads/1e43e983-c56e-4f84-9d10-c03b5bd71f42.png" 
+                  alt="Happy homeowners and real estate agents" 
+                  className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-xl"
+                />
+              </div>
+              <div className="mt-8 flex flex-wrap gap-4 justify-center">
                 <Button className="bg-white text-[#1A659E] hover:bg-gray-100 flex items-center gap-2">
                   <ShoppingCart className="h-5 w-5" /> Start Buying
                 </Button>
