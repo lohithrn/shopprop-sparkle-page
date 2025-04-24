@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, Cell, Label } from 'recharts';
 
@@ -32,7 +31,7 @@ const data: DataPoint[] = [
 ];
 
 const SavingsBubbleChart = () => {
-  const COLORS = ['#F2FCE2', '#F2FCE2', '#F2FCE2', '#333333', '#F2FCE2', '#F2FCE2', '#F2FCE2'];
+  const COLORS = ['#1A659E', '#1A659E', '#1A659E', '#1A659E', '#1A659E', '#1A659E', '#1A659E'];
 
   return (
     <ScatterChart
@@ -48,40 +47,28 @@ const SavingsBubbleChart = () => {
       <XAxis type="number" dataKey="x" hide domain={[0, 800]} />
       <YAxis type="number" dataKey="y" hide domain={[0, 1000]} />
       <ZAxis type="number" dataKey="z" range={[6000, 60000]} />
-      <Scatter data={data} fill="#F2FCE2">
+      <Scatter data={data} fill="#1A659E">
         {data.map((entry, index) => (
           <Cell key={`cell-${index}`} fill={COLORS[index]}>
-            <Label
-              content={({viewBox}) => {
-                const { x = 0, y = 0 } = viewBox as CustomViewBox;
-                return (
-                  <g>
-                    <text
-                      x={x}
-                      y={y}
-                      textAnchor="middle"
-                      fill="#333333"
-                      fontWeight="bold"
-                      fontSize="14"
-                      dominantBaseline="middle"
-                    >
-                      ${entry.savings.toLocaleString()}
-                    </text>
-                    <text
-                      x={x}
-                      y={y + 20}
-                      textAnchor="middle"
-                      fill="#333333"
-                      fontSize="12"
-                      dominantBaseline="middle"
-                    >
-                      savings
-                    </text>
-                  </g>
-                );
-              }}
-              position="center"
-            />
+            <text
+              x={entry.x}
+              y={entry.y}
+              textAnchor="middle"
+              fill="#FFFFFF"
+              fontWeight="bold"
+              fontSize="14"
+            >
+              ${entry.savings.toLocaleString()}
+            </text>
+            <text
+              x={entry.x}
+              y={entry.y + 20}
+              textAnchor="middle"
+              fill="#FFFFFF"
+              fontSize="12"
+            >
+              savings
+            </text>
           </Cell>
         ))}
       </Scatter>
