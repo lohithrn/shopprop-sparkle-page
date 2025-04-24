@@ -23,32 +23,32 @@ const Header = () => {
             />
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
-            <Link to="/premium" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2">
-              <Star className="h-4 w-4" />
+            <Link to="/premium" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+              <Star className="h-3 w-3" />
               <span>Premium Service</span>
             </Link>
-            <Link to="/rebates" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2">
-              <HandCoins className="h-4 w-4" />
+            <Link to="/rebates" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+              <HandCoins className="h-3 w-3" />
               <span>Big Buyer Rebates</span>
             </Link>
-            <Link to="/fees" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2">
-              <BadgeDollarSign className="h-4 w-4" />
+            <Link to="/fees" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+              <BadgeDollarSign className="h-3 w-3" />
               <span>Low Selling Fees</span>
             </Link>
-            <Link to="/tools" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2">
-              <Wrench className="h-4 w-4" />
+            <Link to="/tools" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+              <Wrench className="h-3 w-3" />
               <span>Tools</span>
             </Link>
-            <Link to="/results" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2">
-              <TrendingUp className="h-4 w-4" />
+            <Link to="/results" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+              <TrendingUp className="h-3 w-3" />
               <span>Top Results</span>
             </Link>
-            <Link to="/contact" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2">
-              <Phone className="h-4 w-4" />
+            <Link to="/contact" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+              <Phone className="h-3 w-3" />
               <span>Contact Us</span>
             </Link>
-            <Link to="/login" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2">
-              <LogIn className="h-4 w-4" />
+            <Link to="/login" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+              <LogIn className="h-3 w-3" />
               <span>Login</span>
             </Link>
           </nav>
