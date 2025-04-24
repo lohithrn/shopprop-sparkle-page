@@ -68,6 +68,27 @@ const Index = () => {
           </div>
 
           <div className="h-[60vh] grid md:grid-cols-2 gap-8 items-start">
+            <div className="h-[400px] flex flex-col">
+              <div className="relative flex-grow rounded-lg overflow-hidden h-full">
+                <img 
+                  src="/lovable-uploads/1e43e983-c56e-4f84-9d10-c03b5bd71f42.png" 
+                  alt="Happy homeowners and real estate agents" 
+                  className="absolute inset-0 w-full h-full object-cover shadow-xl"
+                />
+              </div>
+              <div className="mt-8 flex flex-wrap gap-4 justify-center">
+                <Button className="bg-white text-[#1A659E] hover:bg-gray-100 flex items-center gap-2">
+                  <ShoppingCart className="h-5 w-5" /> Start Buying
+                </Button>
+                <Button className="bg-[#1A659E] text-white hover:bg-[#1A659E]/90 flex items-center gap-2">
+                  <HandCoins className="h-5 w-5" /> Start Selling
+                </Button>
+                <Button className="bg-white border border-[#1A659E] text-[#1A659E] hover:bg-gray-50 flex items-center gap-2">
+                  <UserPlus className="h-5 w-5" /> Join
+                </Button>
+              </div>
+            </div>
+
             <div className="flex flex-col">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-[400px]">
                 <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 flex flex-col justify-between h-full">
@@ -121,27 +142,6 @@ const Index = () => {
                     Get Premium
                   </Button>
                 </div>
-              </div>
-            </div>
-
-            <div className="h-[400px] flex flex-col">
-              <div className="relative flex-grow rounded-lg overflow-hidden h-full">
-                <img 
-                  src="/lovable-uploads/1e43e983-c56e-4f84-9d10-c03b5bd71f42.png" 
-                  alt="Happy homeowners and real estate agents" 
-                  className="absolute inset-0 w-full h-full object-cover shadow-xl"
-                />
-              </div>
-              <div className="mt-8 flex flex-wrap gap-4 justify-center">
-                <Button className="bg-white text-[#1A659E] hover:bg-gray-100 flex items-center gap-2">
-                  <ShoppingCart className="h-5 w-5" /> Start Buying
-                </Button>
-                <Button className="bg-[#1A659E] text-white hover:bg-[#1A659E]/90 flex items-center gap-2">
-                  <HandCoins className="h-5 w-5" /> Start Selling
-                </Button>
-                <Button className="bg-white border border-[#1A659E] text-[#1A659E] hover:bg-gray-50 flex items-center gap-2">
-                  <UserPlus className="h-5 w-5" /> Join
-                </Button>
               </div>
             </div>
           </div>
