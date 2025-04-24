@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -35,6 +34,7 @@ const Index = () => {
                   text="Commission Reimagined." 
                   className="bg-clip-text text-transparent bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#1EAEDB_100%)]"
                   delay={150}
+                  whiteText={true}
                 />
               </h1>
             </div>

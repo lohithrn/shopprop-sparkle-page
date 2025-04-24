@@ -5,9 +5,15 @@ interface TypeWriterProps {
   text: string;
   delay?: number;
   className?: string;
+  whiteText?: boolean;
 }
 
-const TypeWriter: React.FC<TypeWriterProps> = ({ text, delay = 100, className = "" }) => {
+const TypeWriter: React.FC<TypeWriterProps> = ({ 
+  text, 
+  delay = 100, 
+  className = "",
+  whiteText = false 
+}) => {
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -22,7 +28,13 @@ const TypeWriter: React.FC<TypeWriterProps> = ({ text, delay = 100, className = 
     }
   }, [currentIndex, delay, text]);
 
-  return <span className={className}>{currentText}</span>;
+  return (
+    <span 
+      className={`${className} ${whiteText ? 'text-white' : ''}`}
+    >
+      {currentText}
+    </span>
+  );
 };
 
 export default TypeWriter;
