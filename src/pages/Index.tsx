@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { 
@@ -67,28 +66,30 @@ const Index = () => {
                 </div>
                 <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
                   <Button 
-                    className="bg-[radial-gradient(circle_at_center,_#1A659E_0%,_#2A95E5_100%)] 
-                               text-white 
-                               hover:bg-[radial-gradient(circle_at_center,_#1A659E_10%,_#2A95E5_90%)] 
+                    className="bg-white/90 
+                               text-[#1A659E] 
+                               hover:bg-white 
                                flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base
-                               shadow-[0_4px_6px_rgba(126,105,171,0.5)] 
-                               hover:shadow-[0_6px_8px_rgba(126,105,171,0.7)]
+                               shadow-[0_4px_6px_rgba(26,101,158,0.2)] 
+                               hover:shadow-[0_6px_8px_rgba(26,101,158,0.3)]
                                transition-all duration-300
-                               w-full sm:w-auto"
+                               w-full sm:w-auto
+                               border border-[#1A659E]/10"
                   >
-                    <ShoppingCart className="h-5 w-5 sm:h-6 sm:w-6 mr-2" /> Start Buying
+                    <ShoppingCart className="h-5 w-5 sm:h-6 sm:w-6 mr-2 text-[#1A659E]" /> Start Buying
                   </Button>
                   <Button 
-                    className="bg-[radial-gradient(circle_at_center,_#1EAEDB_0%,_#0FA0CE_100%)] 
-                               text-white 
-                               hover:bg-[radial-gradient(circle_at_center,_#1EAEDB_10%,_#0FA0CE_90%)] 
+                    className="bg-white/90 
+                               text-[#1EAEDB] 
+                               hover:bg-white 
                                flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base
-                               shadow-[0_4px_6px_rgba(126,105,171,0.5)] 
-                               hover:shadow-[0_6px_8px_rgba(126,105,171,0.7)]
+                               shadow-[0_4px_6px_rgba(30,174,219,0.2)] 
+                               hover:shadow-[0_6px_8px_rgba(30,174,219,0.3)]
                                transition-all duration-300
-                               w-full sm:w-auto"
+                               w-full sm:w-auto
+                               border border-[#1EAEDB]/10"
                   >
-                    <HandCoins className="h-5 w-5 sm:h-6 sm:w-6 mr-2" /> Start Selling
+                    <HandCoins className="h-5 w-5 sm:h-6 sm:w-6 mr-2 text-[#1EAEDB]" /> Start Selling
                   </Button>
                 </div>
               </div>
