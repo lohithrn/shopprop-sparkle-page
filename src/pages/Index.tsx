@@ -1,37 +1,16 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { 
   Search, 
-  Layers, 
-  Award, 
-  BadgeDollarSign, 
-  Check, 
-  Star, 
-  Wallet,
-  BarChart4,
-  Wrench,
-  Phone,
-  ShieldCheck,
   ShoppingCart,
   HandCoins,
-  UserPlus
+  Phone
 } from "lucide-react";
 
 const Index = () => {
   const handleExternalLink = () => {
     window.open("https://shopprop.com", "_blank");
   };
-
-  const menuItems = [
-    { name: "Premium Service", icon: <Award className="h-5 w-5 text-white" /> },
-    { name: "Big Buyer Rebates", icon: <Wallet className="h-5 w-5 text-white" /> },
-    { name: "Low Selling Fees", icon: <BarChart4 className="h-5 w-5 text-white" /> },
-    { name: "Tools", icon: <Wrench className="h-5 w-5 text-white" /> },
-    { name: "Top Results", icon: <Award className="h-5 w-5 text-white" /> },
-    { name: "Contact Us", icon: <Phone className="h-5 w-5 text-white" /> }
-  ];
 
   return (
     <div className="relative min-h-screen bg-[#1A659E]">
@@ -168,54 +147,6 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <section className="py-20 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="bg-white/10 backdrop-blur-md border-0">
-              <CardContent className="p-8">
-                <h3 className="text-lg sm:text-xl font-medium text-white mb-2">Average Seller's Savings</h3>
-                <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">$58,505</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white/10 backdrop-blur-md border-0">
-              <CardContent className="p-8">
-                <h3 className="text-lg sm:text-xl font-medium text-white mb-2">Average Buyer's Rebate</h3>
-                <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">$26,005</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] text-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-white">Our Services</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {menuItems.map((item, index) => (
-              <Card key={index} className="bg-white/10 backdrop-blur-md hover:shadow-lg transition-all duration-300 border-0">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-[#1A659E] p-2 sm:p-3 rounded-lg">
-                      {item.icon}
-                    </div>
-                    <h3 className="text-base sm:text-lg font-medium text-white">{item.name}</h3>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="mt-12 flex flex-col items-center justify-center pb-20">
-        <div className="bg-white/10 backdrop-blur-md rounded-full py-4 px-8 flex items-center gap-4 shadow-lg border border-white/20">
-          <Phone className="h-6 w-6 text-white" />
-          <div className="text-2xl font-bold text-white">+1 888-821-0556</div>
-        </div>
-        <p className="mt-4 text-white/80 text-sm">Talk to our real estate specialists</p>
       </div>
     </div>
   );
