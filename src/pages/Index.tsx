@@ -1,5 +1,4 @@
-
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -39,7 +38,7 @@ const Index = () => {
       <div className="relative h-screen">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] transform -skew-y-6 origin-top-left z-0" />
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col">
-          {/* Title Section - 20vh */}
+          {/* Title and Search Sections */}
           <div className="h-[20vh] flex items-center justify-center">
             <h1 className="text-[min(8vw,4rem)] md:text-[min(4.5vw,4rem)] font-bold leading-tight text-center max-w-4xl text-white">
               Real Estate{" "}
@@ -50,9 +49,7 @@ const Index = () => {
             </h1>
           </div>
 
-          {/* Search Section - 20vh */}
           <div className="h-[20vh] flex flex-col items-center justify-center gap-6">
-            {/* Search Bar Container */}
             <div className="w-full flex justify-center px-4">
               <div className="w-full max-w-xl flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
                 <Search className="h-4 w-4 sm:h-5 sm:w-5 text-white/70 ml-4" />
@@ -67,7 +64,6 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Platform Description - Reduced font size by 50% */}
             <p className="text-[0.65rem] sm:text-xs md:text-sm text-white/90 text-center max-w-2xl px-4">
               One platform. Two powerful choices designed for your success in the modern real estate market.
             </p>
@@ -76,11 +72,9 @@ const Index = () => {
           {/* Bottom Section - 60vh */}
           <div className="h-[60vh] grid md:grid-cols-2 gap-8 items-start">
             {/* Pricing Plans - Match height to image section */}
-            <div className="flex flex-col h-full">
-              {/* Adjusted to match image container height */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-grow">
-                {/* Free Plan */}
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 flex flex-col justify-between">
+            <div className="flex flex-col">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-[400px]">
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 flex flex-col justify-between h-full">
                   <div>
                     <div className="flex items-center gap-2 mb-3">
                       <Star className="h-5 w-5 text-white" />
@@ -103,8 +97,7 @@ const Index = () => {
                   </Button>
                 </div>
 
-                {/* Premium Plan */}
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 relative flex flex-col justify-between">
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 relative flex flex-col justify-between h-full">
                   <div>
                     <div className="absolute -top-2 right-2 bg-white text-[#1A659E] px-2 py-0.5 rounded-full text-xs font-medium">
                       Popular
@@ -135,9 +128,8 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Image and Buttons Section */}
-            <div className="h-full flex flex-col">
-              <div className="relative flex-grow rounded-lg overflow-hidden">
+            <div className="h-[400px] flex flex-col">
+              <div className="relative flex-grow rounded-lg overflow-hidden h-full">
                 <img 
                   src="/lovable-uploads/1e43e983-c56e-4f84-9d10-c03b5bd71f42.png" 
                   alt="Happy homeowners and real estate agents" 
@@ -160,7 +152,6 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Stats Section */}
       <section className="py-20 bg-white text-[#1A659E]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -181,7 +172,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
       <section className="py-20 bg-gradient-to-br from-[#1A659E]/5 to-white text-[#1A659E]">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-[#1A659E]">Our Services</h2>
