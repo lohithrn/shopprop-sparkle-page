@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { 
   Search, 
@@ -14,6 +14,41 @@ import Header from "@/components/Header";
 
 const Index = () => {
   const isMobile = useIsMobile();
+  const [freemiumText, setFreemiumText] = useState("");
+  const [premiumText, setPremiumText] = useState("");
+  
+  useEffect(() => {
+    const text1 = "Freemium";
+    const text2 = "Premium";
+    let index1 = 0;
+    let index2 = 0;
+
+    const type1 = () => {
+      if (index1 < text1.length) {
+        setFreemiumText(prev => prev + text1.charAt(index1));
+        index1++;
+        setTimeout(type1, 150);
+      }
+    };
+
+    const type2 = () => {
+      if (index2 < text2.length) {
+        setPremiumText(prev => prev + text2.charAt(index2));
+        index2++;
+        setTimeout(type2, 150);
+      }
+    };
+
+    // Start typing with a small delay
+    setTimeout(type1, 500);
+    setTimeout(type2, 1000);
+
+    return () => {
+      setFreemiumText("");
+      setPremiumText("");
+    };
+  }, []);
+
   const handleExternalLink = () => {
     window.open("https://shopprop.com", "_blank");
   };
@@ -98,7 +133,7 @@ const Index = () => {
                     <div>
                       <div className="flex items-center gap-2 mb-3">
                         <Star className="h-5 w-5 text-white" />
-                        <h3 className="text-lg font-semibold text-white">Freemium</h3>
+                        <h3 className="text-lg font-semibold text-white min-h-[28px]">{freemiumText}</h3>
                       </div>
                       <p className="text-xl sm:text-2xl font-bold mb-3 text-white">Free <span className="text-sm font-normal">forever</span></p>
                       <ul className="space-y-2 mb-4">
@@ -124,7 +159,7 @@ const Index = () => {
                       </div>
                       <div className="flex items-center gap-2 mb-3">
                         <BadgeDollarSign className="h-5 w-5 text-white" />
-                        <h3 className="text-lg font-semibold text-white">Premium</h3>
+                        <h3 className="text-lg font-semibold text-white min-h-[28px]">{premiumText}</h3>
                       </div>
                       <ul className="space-y-2 mb-4">
                         <li className="flex items-center gap-2 text-white">
