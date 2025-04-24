@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -101,15 +100,18 @@ const Index = () => {
                     <BadgeDollarSign className="h-5 w-5 text-white" />
                     <h3 className="text-lg font-semibold">Premium</h3>
                   </div>
-                  <p className="text-2xl font-bold mb-3">$99 <span className="text-sm font-normal">/month</span></p>
                   <ul className="space-y-2 mb-4">
                     <li className="flex items-center gap-2">
                       <ShieldCheck className="h-4 w-4" />
-                      <span className="text-sm">Unlimited listings</span>
+                      <span className="text-sm">Full-Service Support</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <ShieldCheck className="h-4 w-4" />
-                      <span className="text-sm">Priority support 24/7</span>
+                      <span className="text-sm">Big Buyer Rebates</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <ShieldCheck className="h-4 w-4" />
+                      <span className="text-sm">Lowest Seller Fees</span>
                     </li>
                   </ul>
                   <Button className="w-full bg-[#1A659E] text-white border border-white hover:bg-[#1A659E]/90">
@@ -176,4 +178,3 @@ const Index = () => {
 };
 
 export default Index;
-
