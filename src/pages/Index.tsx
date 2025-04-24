@@ -13,6 +13,7 @@ import {
   Wrench,
   Phone
 } from "lucide-react";
+import PricingSection from "@/components/PricingSection";
 
 const Index = () => {
   const handleExternalLink = () => {
@@ -119,6 +120,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Pricing Section */}
+      <PricingSection />
     </div>
   );
 };
