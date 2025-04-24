@@ -156,6 +156,14 @@ const Index = () => {
                   </Button>
                 </div>
               </div>
+              
+              <div className="mt-8 flex flex-col items-center justify-center">
+                <div className="bg-white/10 backdrop-blur-md rounded-full py-4 px-8 flex items-center gap-4 shadow-lg border border-white/20">
+                  <Phone className="h-6 w-6 text-white" />
+                  <div className="text-2xl font-bold text-white">+1 888-821-0556</div>
+                </div>
+                <p className="mt-4 text-white/80 text-sm">Talk to our real estate specialists</p>
+              </div>
             </div>
           </div>
         </div>
