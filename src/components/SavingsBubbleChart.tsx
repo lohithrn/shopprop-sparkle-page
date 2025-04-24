@@ -78,6 +78,7 @@ const SavingsBubbleChart = () => {
                       fill="#333333"
                       fontWeight="bold"
                       fontSize="14"
+                      dominantBaseline="middle"
                     >
                       ${entry.savings.toLocaleString()}
                     </text>
@@ -87,12 +88,14 @@ const SavingsBubbleChart = () => {
                       textAnchor="middle"
                       fill="#333333"
                       fontSize="12"
+                      dominantBaseline="middle"
                     >
                       savings
                     </text>
                   </g>
                 );
               }}
+              position="center"
             />
           </Cell>
         ))}
