@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, Tooltip, Cell, Label } from 'recharts';
+import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, Cell } from 'recharts';
 
 interface DataPoint {
   x: number;
@@ -34,19 +34,6 @@ const data: DataPoint[] = [
 const SavingsBubbleChart = () => {
   const COLORS = ['#F2FCE2', '#F2FCE2', '#F2FCE2', '#333333', '#F2FCE2', '#F2FCE2', '#F2FCE2'];
 
-  const CustomTooltip = ({ active, payload }: any) => {
-    if (active && payload && payload.length) {
-      const data = payload[0].payload;
-      return (
-        <div className="bg-white p-2 border border-gray-200 rounded-lg shadow-lg">
-          <p className="font-bold">${data.value.toLocaleString()}</p>
-          <p className="text-gray-600">{data.name}</p>
-        </div>
-      );
-    }
-    return null;
-  };
-
   return (
     <ScatterChart
       width={800}
@@ -61,13 +48,11 @@ const SavingsBubbleChart = () => {
       <XAxis type="number" dataKey="x" hide domain={[0, 800]} />
       <YAxis type="number" dataKey="y" hide domain={[0, 1000]} />
       <ZAxis type="number" dataKey="z" range={[6000, 60000]} />
-      <Tooltip content={<CustomTooltip />} />
       <Scatter data={data} fill="#F2FCE2">
         {data.map((entry, index) => (
           <Cell key={`cell-${index}`} fill={COLORS[index]}>
             <Label
               content={({viewBox}) => {
-                // Cast viewBox to our custom interface that includes x and y
                 const { x = 0, y = 0 } = viewBox as CustomViewBox;
                 return (
                   <g>
