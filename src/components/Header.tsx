@@ -23,31 +23,31 @@ const Header = () => {
             />
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
-            <Link to="/premium" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+            <Link to="/premium" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs font-bold">
               <Star className="h-3 w-3" />
               <span>Premium Service</span>
             </Link>
-            <Link to="/rebates" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+            <Link to="/rebates" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs font-bold">
               <HandCoins className="h-3 w-3" />
               <span>Big Buyer Rebates</span>
             </Link>
-            <Link to="/fees" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+            <Link to="/fees" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs font-bold">
               <BadgeDollarSign className="h-3 w-3" />
               <span>Low Selling Fees</span>
             </Link>
-            <Link to="/tools" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+            <Link to="/tools" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs font-bold">
               <Wrench className="h-3 w-3" />
               <span>Tools</span>
             </Link>
-            <Link to="/results" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+            <Link to="/results" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs font-bold">
               <TrendingUp className="h-3 w-3" />
               <span>Top Results</span>
             </Link>
-            <Link to="/contact" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+            <Link to="/contact" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs font-bold">
               <Phone className="h-3 w-3" />
               <span>Contact Us</span>
             </Link>
-            <Link to="/login" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs">
+            <Link to="/login" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2 text-xs font-bold">
               <LogIn className="h-3 w-3" />
               <span>Login</span>
             </Link>
@@ -59,3 +59,4 @@ const Header = () => {
 };
 
 export default Header;
+
