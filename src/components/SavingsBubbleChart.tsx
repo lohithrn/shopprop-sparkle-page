@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, Cell } from 'recharts';
+import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, Cell, Label } from 'recharts';
 
 interface DataPoint {
   x: number;
