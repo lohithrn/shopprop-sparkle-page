@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -14,7 +13,7 @@ import {
 import { useIsMobile } from "@/hooks/use-mobile";
 import Header from "@/components/Header";
 import TypeWriter from "@/components/TypeWriter";
-import SavingsHighlight from "@/components/SavingsHighlight";
+import { BadgeDollarSign } from "lucide-react";
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -61,6 +60,43 @@ const Index = () => {
               <p className="text-[0.65rem] sm:text-xs md:text-sm text-white/90 text-center max-w-2xl px-4">
                 One platform. Two powerful choices designed for your success in the modern real estate market.
               </p>
+            </div>
+
+            {/* Savings Panel */}
+            <div className="mt-8 md:mt-16">
+              <div className="w-full max-w-4xl mx-auto">
+                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+                  <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8">
+                    They Get It! Potential Savings on a $1M Property
+                  </h2>
+                  
+                  <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+                    <div className="flex-1 text-center">
+                      <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+                        <h3 className="text-xl font-semibold text-white mb-4 flex items-center justify-center gap-2">
+                          <BadgeDollarSign className="h-5 w-5" />
+                          Seller's Savings
+                        </h3>
+                        <div className="text-4xl md:text-5xl font-bold text-white">
+                          $58,505
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex-1 text-center">
+                      <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+                        <h3 className="text-xl font-semibold text-white mb-4 flex items-center justify-center gap-2">
+                          <BadgeDollarSign className="h-5 w-5" />
+                          Buyer's Rebate
+                        </h3>
+                        <div className="text-4xl md:text-5xl font-bold text-white">
+                          $26,005
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="mt-8 md:mt-16 flex flex-col md:flex-row gap-8 items-start">
@@ -185,7 +221,6 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <SavingsHighlight />
     </div>
   );
 };
