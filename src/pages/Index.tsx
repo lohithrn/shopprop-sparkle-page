@@ -146,7 +146,7 @@ const Index = () => {
                       </ul>
                     </div>
                     <Button className="w-full bg-[#1A659E] text-white border border-white hover:bg-[#1A659E]/90">
-                      Get Premium
+                      Savings Calculator
                     </Button>
                   </div>
                 </div>
