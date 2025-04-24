@@ -2,7 +2,18 @@ import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Search, Layers, Award, BadgeDollarSign, Check, Star } from "lucide-react";
+import { 
+  Search, 
+  Layers, 
+  Award, 
+  BadgeDollarSign, 
+  Check, 
+  Star, 
+  Wallet,
+  BarChart4,
+  Wrench,
+  Phone
+} from "lucide-react";
 
 const Index = () => {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
