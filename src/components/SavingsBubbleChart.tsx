@@ -49,7 +49,7 @@ const SavingsBubbleChart = () => {
     >
       <XAxis type="number" dataKey="x" hide domain={[0, 200]} />
       <YAxis type="number" dataKey="y" hide domain={[0, 500]} />
-      <ZAxis type="number" dataKey="z" range={[100, 1000]} />
+      <ZAxis type="number" dataKey="z" range={[500, 5000]} />
       <Tooltip content={<CustomTooltip />} />
       <Scatter data={data} fill="#F2FCE2">
         {data.map((entry, index) => (
@@ -61,3 +61,4 @@ const SavingsBubbleChart = () => {
 };
 
 export default SavingsBubbleChart;
+
