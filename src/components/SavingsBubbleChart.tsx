@@ -11,6 +11,14 @@ interface DataPoint {
   savings: number;
 }
 
+// Define a more specific ViewBox interface that includes x and y
+interface CustomViewBox {
+  x?: number;
+  y?: number;
+  width?: number;
+  height?: number;
+}
+
 const generateRandomSavings = () => Math.floor(Math.random() * (43000 - 10000) + 10000);
 
 const data: DataPoint[] = [
@@ -59,7 +67,8 @@ const SavingsBubbleChart = () => {
           <Cell key={`cell-${index}`} fill={COLORS[index]}>
             <Label
               content={({viewBox}) => {
-                const {x, y} = viewBox;
+                // Cast viewBox to our custom interface that includes x and y
+                const { x = 0, y = 0 } = viewBox as CustomViewBox;
                 return (
                   <g>
                     <text
@@ -93,4 +102,3 @@ const SavingsBubbleChart = () => {
 };
 
 export default SavingsBubbleChart;
-
