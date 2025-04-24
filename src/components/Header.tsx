@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/a5af7024-c9d1-4395-b418-2aa68f55848d.png" 
+              src="https://www.shopprop.com/assets/logo/main-logo.png" 
               alt="ShopProp Logo" 
               className="h-8 md:h-10"
             />
