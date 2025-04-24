@@ -127,7 +127,7 @@ const Index = () => {
                         </li>
                       </ul>
                     </div>
-                    <Button className="w-full bg-white text-[#1A659E] hover:bg-white/90">
+                    <Button className="w-full bg-white text-[#1A659E] hover:bg-white/90 text-lg font-bold py-4 rounded-2xl transition-all duration-300 ease-in-out transform hover:scale-[1.02] shadow-lg">
                       Get Started
                     </Button>
                   </div>
