@@ -36,7 +36,7 @@ const Index = () => {
                 <TypeWriter 
                   text="Reimagined." 
                   delay={80} 
-                  className="bg-clip-text text-transparent bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#1EAEDB_100%)]" 
+                  className="text-white" 
                 />
               </h1>
             </div>
