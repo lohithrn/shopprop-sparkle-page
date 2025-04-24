@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { 
@@ -23,7 +24,7 @@ const Index = () => {
       <Header />
       <div className="relative min-h-screen bg-[#1A659E] overflow-hidden pt-16">
         <div className="relative h-full min-h-screen">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] transform -skew-y-6 origin-top-left z-0" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1A659E] via-[#2A95E5] to-[#1EAEDB] z-0" />
           <div className="relative z-10 container mx-auto px-4 py-8 h-full flex flex-col">
             <div className="pt-4 md:pt-8 flex items-center justify-center">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight text-center max-w-4xl text-white">
