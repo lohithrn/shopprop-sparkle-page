@@ -12,7 +12,10 @@ import {
   BarChart4,
   Wrench,
   Phone,
-  ShieldCheck
+  ShieldCheck,
+  ShoppingCart,
+  HandCoins,
+  UserPlus
 } from "lucide-react";
 
 const Index = () => {
@@ -121,12 +124,23 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="hidden md:block">
+            <div className="hidden md:block relative">
               <img 
                 src="/lovable-uploads/1e43e983-c56e-4f84-9d10-c03b5bd71f42.png" 
                 alt="Happy homeowners and real estate agents" 
                 className="rounded-lg shadow-xl w-full object-cover"
               />
+              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4">
+                <Button className="bg-white text-[#1A659E] hover:bg-gray-100 flex items-center gap-2">
+                  <ShoppingCart className="h-5 w-5" /> Start Buying
+                </Button>
+                <Button className="bg-[#1A659E] text-white hover:bg-[#1A659E]/90 flex items-center gap-2">
+                  <HandCoins className="h-5 w-5" /> Start Selling
+                </Button>
+                <Button className="bg-white border border-[#1A659E] text-[#1A659E] hover:bg-gray-50 flex items-center gap-2">
+                  <UserPlus className="h-5 w-5" /> Join
+                </Button>
+              </div>
             </div>
           </div>
         </div>
