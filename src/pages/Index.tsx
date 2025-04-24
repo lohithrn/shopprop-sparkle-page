@@ -171,9 +171,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Pricing Section */}
-      <PricingSection />
     </div>
   );
 };
