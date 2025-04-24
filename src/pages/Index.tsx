@@ -13,6 +13,7 @@ import {
 import { useIsMobile } from "@/hooks/use-mobile";
 import Header from "@/components/Header";
 import TypeWriter from "@/components/TypeWriter";
+import SavingsHighlight from "@/components/SavingsHighlight";
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -183,6 +184,7 @@ const Index = () => {
           </div>
         </div>
       </div>
+      <SavingsHighlight />
     </>
   );
 };
