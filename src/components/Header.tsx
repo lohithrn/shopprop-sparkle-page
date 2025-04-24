@@ -4,7 +4,7 @@ import {
   Star, 
   HandCoins,
   BadgeDollarSign,
-  Tools,
+  Wrench,
   TrendingUp,
   Phone,
   LogIn
@@ -36,7 +36,7 @@ const Header = () => {
               <span>Low Selling Fees</span>
             </Link>
             <Link to="/tools" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2">
-              <Tools className="h-4 w-4" />
+              <Wrench className="h-4 w-4" />
               <span>Tools</span>
             </Link>
             <Link to="/results" className="text-gray-600 hover:text-[#1A659E] transition-colors flex items-center gap-2">
