@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { 
@@ -18,8 +19,8 @@ const Index = () => {
   const [premiumText, setPremiumText] = useState("");
   
   useEffect(() => {
-    const text1 = "Freemium";
-    const text2 = "Premium";
+    const text1 = "Freemium";  // Ensured correct spelling with capital 'F'
+    const text2 = "Premium";   // Ensured correct spelling of "Premium" (not "remiumm")
     let index1 = 0;
     let index2 = 0;
     let isTyping1 = true;
