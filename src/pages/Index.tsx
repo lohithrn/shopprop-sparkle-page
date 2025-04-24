@@ -19,8 +19,8 @@ const Index = () => {
   const [premiumText, setPremiumText] = useState("");
   
   useEffect(() => {
-    const text1 = "Freemium";  // Ensured correct spelling with capital 'F'
-    const text2 = "Premium";   // Ensured correct spelling of "Premium" (not "remiumm")
+    const text1 = "Freemium";  // Explicitly ensure it starts with "F"
+    const text2 = "Premium";   // Ensure correct spelling of "Premium"
     let index1 = 0;
     let index2 = 0;
     let isTyping1 = true;
