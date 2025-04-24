@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -33,8 +34,8 @@ const Index = () => {
   ];
 
   return (
-    <div className="relative min-h-screen bg-white text-white">
-      <div className="relative h-screen">
+    <div className="relative min-h-screen bg-[#1A659E]">
+      <div className="relative h-full">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] transform -skew-y-6 origin-top-left z-0" />
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col">
           <div className="h-[15vh] flex items-center justify-center">
@@ -169,38 +170,38 @@ const Index = () => {
         </div>
       </div>
 
-      <section className="py-20 bg-white text-[#1A659E]">
+      <section className="py-20 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="bg-gradient-to-br from-[#1A659E]/5 to-[#1A659E]/10 border-0">
+            <Card className="bg-white/10 backdrop-blur-md border-0">
               <CardContent className="p-8">
-                <h3 className="text-lg sm:text-xl font-medium text-[#1A659E] mb-2">Average Seller's Savings</h3>
-                <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A659E]">$58,505</p>
+                <h3 className="text-lg sm:text-xl font-medium text-white mb-2">Average Seller's Savings</h3>
+                <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">$58,505</p>
               </CardContent>
             </Card>
             
-            <Card className="bg-gradient-to-br from-[#1A659E]/5 to-[#1A659E]/10 border-0">
+            <Card className="bg-white/10 backdrop-blur-md border-0">
               <CardContent className="p-8">
-                <h3 className="text-lg sm:text-xl font-medium text-[#1A659E] mb-2">Average Buyer's Rebate</h3>
-                <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A659E]">$26,005</p>
+                <h3 className="text-lg sm:text-xl font-medium text-white mb-2">Average Buyer's Rebate</h3>
+                <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">$26,005</p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-[#1A659E]/5 to-white text-[#1A659E]">
+      <section className="py-20 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-[#1A659E]">Our Services</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-white">Our Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {menuItems.map((item, index) => (
-              <Card key={index} className="bg-white hover:shadow-lg transition-all duration-300 border-0">
+              <Card key={index} className="bg-white/10 backdrop-blur-md hover:shadow-lg transition-all duration-300 border-0">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4">
-                    <div className="bg-[#1A659E] p-2 sm:p-3 rounded-lg text-white">
+                    <div className="bg-[#1A659E] p-2 sm:p-3 rounded-lg">
                       {item.icon}
                     </div>
-                    <h3 className="text-base sm:text-lg font-medium text-[#1A659E]">{item.name}</h3>
+                    <h3 className="text-base sm:text-lg font-medium text-white">{item.name}</h3>
                   </div>
                 </CardContent>
               </Card>
