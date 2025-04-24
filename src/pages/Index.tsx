@@ -49,8 +49,8 @@ const Index = () => {
               </h1>
 
               {/* Search Bar */}
-              <div className="mb-4">
-                <div className="flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
+              <div className="mb-4 flex justify-center">
+                <div className="w-full max-w-xl flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
                   <Search className="h-4 w-4 sm:h-5 sm:w-5 text-white/70 ml-4" />
                   <input 
                     type="text" 
@@ -64,7 +64,7 @@ const Index = () => {
               </div>
 
               {/* Platform Description */}
-              <div className="max-w-2xl mb-8">
+              <div className="max-w-2xl mb-8 text-center">
                 <p className="text-xs sm:text-sm md:text-base text-[#E2F0FF]/90">
                   One platform. Two powerful choices designed for your success in the modern real estate market.
                 </p>
