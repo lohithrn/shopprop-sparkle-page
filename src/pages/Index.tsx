@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -38,7 +37,7 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-4 h-full py-12">
           <div className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
             <div className="text-white">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-[min(8vw,4rem)] md:text-[min(5vw,3.5rem)] lg:text-[min(4vw,4rem)] font-bold mb-6 leading-tight md:leading-none whitespace-normal md:whitespace-nowrap">
                 Real Estate{" "}
                 <span className="bg-clip-text text-transparent bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#1EAEDB_100%)]">
                   Commission
