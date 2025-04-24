@@ -3,7 +3,7 @@ import { BadgeDollarSign } from "lucide-react";
 
 const SavingsHighlight = () => {
   return (
-    <div className="relative w-full bg-gradient-to-br from-[#1A659E] via-[#2A95E5] to-[#1EAEDB]">
+    <div className="relative w-full">
       <div className="relative z-10 w-full max-w-4xl mx-auto px-4 pt-6 pb-16">
         <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
           <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8">
