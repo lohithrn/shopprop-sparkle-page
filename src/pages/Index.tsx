@@ -1,5 +1,5 @@
+
 import { useState, useEffect } from "react";
-import Confetti from "react-confetti";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -16,29 +16,6 @@ import {
 } from "lucide-react";
 
 const Index = () => {
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-  const [showConfetti, setShowConfetti] = useState(true);
-  
-  useEffect(() => {
-    const updateDimensions = () => {
-      setDimensions({
-        width: window.innerWidth,
-        height: window.innerHeight
-      });
-    };
-    
-    updateDimensions();
-    window.addEventListener("resize", updateDimensions);
-    
-    // Stop confetti after 5 seconds
-    const timer = setTimeout(() => setShowConfetti(false), 5000);
-    
-    return () => {
-      window.removeEventListener("resize", updateDimensions);
-      clearTimeout(timer);
-    };
-  }, []);
-  
   const handleExternalLink = () => {
     window.open("https://shopprop.com", "_blank");
   };
@@ -53,145 +30,122 @@ const Index = () => {
   ];
 
   return (
-    <div className="relative min-h-screen bg-white text-gray-800">
-      {showConfetti && (
-        <Confetti
-          width={dimensions.width}
-          height={dimensions.height}
-          recycle={false}
-          numberOfPieces={200}
-          colors={['#FF6B35', '#1A659E', '#7851A9', '#FF9F1C']}
-        />
-      )}
-      
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-[#1A659E]/10 to-white/90 overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: 'url(https://www.shopprop.com/assets/images/home-page/home-image_1.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}
-        />
-        
-        <div className="container mx-auto px-4 z-10">
-          <div className="max-w-3xl mx-auto text-center backdrop-blur-sm p-8 rounded-lg bg-white/80">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-[#1A659E]">Real Estate, Flipped.</h1>
+    <div className="relative min-h-screen bg-white">
+      {/* Hero Section with Diagonal Design */}
+      <div className="relative h-screen">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] transform -skew-y-6 origin-top-left z-0" />
+        <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
+          <div className="max-w-4xl mx-auto text-white">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              Real Estate, <br />
+              <span className="text-[#E2F0FF]">Reimagined.</span>
+            </h1>
             
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <Layers className="h-6 w-6 text-[#1A659E]" />
-              <p className="text-xl md:text-2xl text-gray-700">
-                1 Platform. 2 Powerful Choices:
+            <div className="max-w-2xl">
+              <p className="text-xl md:text-2xl mb-8 text-[#E2F0FF]/90">
+                One platform. Two powerful choices designed for your success in the modern real estate market.
               </p>
             </div>
-            
-            <Card className="mb-4 bg-gradient-to-r from-[#1A659E]/5 to-[#1A659E]/10 border-[#1A659E]/20 hover:shadow-lg transition-all duration-300">
-              <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-                  <div className="flex items-center gap-2">
-                    <Award className="h-6 w-6 text-[#1A659E]" />
-                    <h3 className="text-xl font-semibold text-[#1A659E]">Premium</h3>
+
+            <div className="grid md:grid-cols-2 gap-6 mt-12">
+              {/* Premium Card */}
+              <Card className="bg-white/10 backdrop-blur-lg border-0 hover:bg-white/15 transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="flex flex-col gap-4">
+                    <Award className="h-8 w-8 text-[#E2F0FF]" />
+                    <h3 className="text-2xl font-bold text-white">Premium</h3>
+                    <ul className="space-y-3">
+                      <li className="flex items-center gap-2">
+                        <Check className="h-5 w-5 text-[#E2F0FF]" />
+                        <span>Full-Service Support</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Star className="h-5 w-5 text-[#E2F0FF]" />
+                        <span>Big Buyer Rebates</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <BadgeDollarSign className="h-5 w-5 text-[#E2F0FF]" />
+                        <span>Lowest Seller Fees</span>
+                      </li>
+                    </ul>
                   </div>
-                  <div className="flex flex-wrap justify-center items-center gap-3">
-                    <span className="flex items-center gap-1">
-                      <Check className="h-5 w-5 text-[#1A659E]/80" />
-                      <span className="text-gray-700">Full-Service</span>
-                    </span>
-                    <span className="text-[#1A659E]/40">+</span>
-                    <span className="flex items-center gap-1">
-                      <Star className="h-5 w-5 text-[#1A659E]/80" />
-                      <span className="text-gray-700">Big Buyer Rebates</span>
-                    </span>
-                    <span className="text-[#1A659E]/40">+</span>
-                    <span className="flex items-center gap-1">
-                      <BadgeDollarSign className="h-5 w-5 text-[#1A659E]/80" />
-                      <span className="text-gray-700">Lowest Seller Fees</span>
-                    </span>
+                </CardContent>
+              </Card>
+
+              {/* Freemium Card */}
+              <Card className="bg-white/10 backdrop-blur-lg border-0 hover:bg-white/15 transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="flex flex-col gap-4">
+                    <BadgeDollarSign className="h-8 w-8 text-[#E2F0FF]" />
+                    <h3 className="text-2xl font-bold text-white">Freemium</h3>
+                    <ul className="space-y-3">
+                      <li className="flex items-center gap-2">
+                        <Check className="h-5 w-5 text-[#E2F0FF]" />
+                        <span>$0 Commission</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Star className="h-5 w-5 text-[#E2F0FF]" />
+                        <span>Licensed Support</span>
+                      </li>
+                    </ul>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="mb-8 bg-gradient-to-r from-[#1A659E]/5 to-[#1A659E]/10 border-[#1A659E]/20 hover:shadow-lg transition-all duration-300">
-              <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-                  <div className="flex items-center gap-2">
-                    <BadgeDollarSign className="h-6 w-6 text-[#1A659E]" />
-                    <h3 className="text-xl font-semibold text-[#1A659E]">Freemium</h3>
-                  </div>
-                  <div className="flex flex-wrap justify-center items-center gap-3">
-                    <span className="flex items-center gap-1">
-                      <BadgeDollarSign className="h-5 w-5 text-[#1A659E]/80" />
-                      <span className="text-gray-700">$0 Commission</span>
-                    </span>
-                    <span className="text-[#1A659E]/40">+</span>
-                    <span className="flex items-center gap-1">
-                      <Check className="h-5 w-5 text-[#1A659E]/80" />
-                      <span className="text-gray-700">Licensed Support</span>
-                    </span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <div className="relative mb-8">
-              <div className="flex items-center bg-white/90 backdrop-blur-md rounded-full px-4 py-2 border border-[#1A659E]/20 shadow-lg">
-                <Search className="h-5 w-5 text-[#1A659E] mr-2" />
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Search Bar */}
+            <div className="mt-12">
+              <div className="flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
+                <Search className="h-5 w-5 text-white/70 ml-4" />
                 <input 
                   type="text" 
-                  placeholder="Search for properties..." 
-                  className="bg-transparent border-none outline-none flex-1 text-gray-700 placeholder-gray-400"
+                  placeholder="Search properties..." 
+                  className="bg-transparent border-none outline-none flex-1 px-4 text-white placeholder-white/70"
                 />
-                <Button variant="default" className="rounded-full bg-gradient-to-r from-[#1A659E] to-[#1A659E]/80 hover:from-[#1A659E]/90 hover:to-[#1A659E]/70">
+                <Button className="rounded-full bg-white text-[#1A659E] hover:bg-white/90">
                   Search
                 </Button>
               </div>
             </div>
-            
-            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-              <Button variant="default" className="bg-gradient-to-r from-[#1A659E] to-[#1A659E]/80 hover:from-[#1A659E]/90 hover:to-[#1A659E]/70 rounded-full px-8 py-6 text-lg">
-                Start Buying
-              </Button>
-              <Button variant="default" className="bg-gradient-to-r from-[#1A659E]/90 to-[#1A659E]/70 hover:from-[#1A659E] hover:to-[#1A659E]/80 rounded-full px-8 py-6 text-lg">
-                Start Selling
-              </Button>
-            </div>
           </div>
         </div>
-      </section>
-      
-      <section className="py-16 bg-gradient-to-b from-white to-[#1A659E]/10">
+      </div>
+
+      {/* Stats Section */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-center gap-8">
-            <Card className="bg-white/80 border border-[#1A659E]/20 shadow-lg backdrop-blur-md hover:shadow-xl transition-shadow cursor-pointer">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-medium text-[#1A659E]">Seller's Savings</h3>
-                <p className="text-4xl font-bold bg-gradient-to-r from-[#1A659E] to-[#1A659E]/70 bg-clip-text text-transparent">$58,505</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="bg-gradient-to-br from-[#1A659E]/5 to-[#1A659E]/10 border-0">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-medium text-[#1A659E] mb-2">Average Seller's Savings</h3>
+                <p className="text-4xl font-bold text-[#1A659E]">$58,505</p>
               </CardContent>
             </Card>
             
-            <Card className="bg-white/80 border border-[#1A659E]/20 shadow-lg backdrop-blur-md hover:shadow-xl transition-shadow cursor-pointer">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-medium text-[#1A659E]">Buyer's Rebate</h3>
-                <p className="text-4xl font-bold bg-gradient-to-r from-[#1A659E] to-[#1A659E]/70 bg-clip-text text-transparent">$26,005</p>
+            <Card className="bg-gradient-to-br from-[#1A659E]/5 to-[#1A659E]/10 border-0">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-medium text-[#1A659E] mb-2">Average Buyer's Rebate</h3>
+                <p className="text-4xl font-bold text-[#1A659E]">$26,005</p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
-      
-      <section className="py-16 bg-white">
+
+      {/* Services Grid */}
+      <section className="py-20 bg-gradient-to-br from-[#1A659E]/5 to-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-10 text-[#1A659E]">Our Services</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#1A659E]">Our Services</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {menuItems.map((item, index) => (
-              <Card key={index} className="bg-white/80 border border-[#1A659E]/20 hover:border-[#1A659E]/30 shadow-lg hover:shadow-xl backdrop-blur-md transition-all">
-                <CardContent className="p-6 flex items-center">
-                  <div className="bg-gradient-to-r from-[#1A659E] to-[#1A659E]/80 p-3 rounded-full mr-4 text-white">
-                    {item.icon}
+              <Card key={index} className="bg-white hover:shadow-lg transition-all duration-300 border-0">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-[#1A659E] p-3 rounded-lg text-white">
+                      {item.icon}
+                    </div>
+                    <h3 className="text-lg font-medium text-[#1A659E]">{item.name}</h3>
                   </div>
-                  <h3 className="text-xl font-medium text-[#1A659E]">{item.name}</h3>
                 </CardContent>
               </Card>
             ))}
