@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -22,10 +23,10 @@ const Index = () => {
   };
 
   return (
-    <>
+    <div className="bg-[#1A659E]">
       <Header />
-      <div className="relative min-h-screen bg-[#1A659E] overflow-hidden pt-16">
-        <div className="relative h-full min-h-screen">
+      <div className="relative min-h-screen overflow-hidden pt-16">
+        <div className="relative h-full">
           <div className="absolute inset-0 bg-gradient-to-br from-[#1A659E] via-[#2A95E5] to-[#1EAEDB] z-0" />
           <div className="relative z-10 container mx-auto px-4 py-8 h-full flex flex-col">
             <div className="pt-4 md:pt-8 flex items-center justify-center">
@@ -185,7 +186,7 @@ const Index = () => {
         </div>
       </div>
       <SavingsHighlight />
-    </>
+    </div>
   );
 };
 
