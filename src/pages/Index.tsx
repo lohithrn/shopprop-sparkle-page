@@ -73,7 +73,7 @@ const Index = () => {
                 <div className="bg-white/10 backdrop-blur-md rounded-xl p-4">
                   <div className="flex items-center gap-2 mb-3">
                     <Star className="h-5 w-5 text-white" />
-                    <h3 className="text-lg font-semibold">Basic</h3>
+                    <h3 className="text-lg font-semibold">Freemium</h3>
                   </div>
                   <p className="text-2xl font-bold mb-3">Free <span className="text-sm font-normal">forever</span></p>
                   <ul className="space-y-2 mb-4">
