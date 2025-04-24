@@ -61,43 +61,6 @@ const Index = () => {
               </p>
             </div>
 
-            {/* Savings Panel */}
-            <div className="mt-8 md:mt-16">
-              <div className="w-full max-w-4xl mx-auto">
-                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
-                  <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8">
-                    They Get It! Potential Savings on a $1M Property
-                  </h2>
-                  
-                  <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-                    <div className="flex-1 text-center">
-                      <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
-                        <h3 className="text-xl font-semibold text-white mb-4 flex items-center justify-center gap-2">
-                          <BadgeDollarSign className="h-5 w-5" />
-                          Seller's Savings
-                        </h3>
-                        <div className="text-4xl md:text-5xl font-bold text-white">
-                          $58,505
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="flex-1 text-center">
-                      <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
-                        <h3 className="text-xl font-semibold text-white mb-4 flex items-center justify-center gap-2">
-                          <BadgeDollarSign className="h-5 w-5" />
-                          Buyer's Rebate
-                        </h3>
-                        <div className="text-4xl md:text-5xl font-bold text-white">
-                          $26,005
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="mt-8 md:mt-16 flex flex-col md:flex-row gap-8 items-start">
               <div className="w-full md:w-1/2 flex flex-col">
                 <div className="relative aspect-[4/3] md:aspect-auto md:h-[400px] rounded-lg overflow-hidden">
@@ -214,6 +177,42 @@ const Index = () => {
                     <div className="text-lg sm:text-2xl font-bold text-white truncate">+1 888-821-0556</div>
                   </div>
                   <p className="mt-4 text-white/80 text-sm">Talk to our real estate specialists</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 md:mt-16 mb-8">
+              <div className="w-full max-w-4xl mx-auto">
+                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+                  <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8">
+                    They Get It! Potential Savings on a $1M Property
+                  </h2>
+                  
+                  <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+                    <div className="flex-1 text-center">
+                      <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+                        <h3 className="text-xl font-semibold text-white mb-4 flex items-center justify-center gap-2">
+                          <BadgeDollarSign className="h-5 w-5" />
+                          Seller's Savings
+                        </h3>
+                        <div className="text-4xl md:text-5xl font-bold text-white">
+                          $58,505
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex-1 text-center">
+                      <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+                        <h3 className="text-xl font-semibold text-white mb-4 flex items-center justify-center gap-2">
+                          <BadgeDollarSign className="h-5 w-5" />
+                          Buyer's Rebate
+                        </h3>
+                        <div className="text-4xl md:text-5xl font-bold text-white">
+                          $26,005
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
