@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -36,7 +35,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] transform -skew-y-6 origin-top-left z-0" />
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-4xl mx-auto text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight truncate">
               Real Estate, Reimagined.
             </h1>
             
@@ -156,4 +155,3 @@ const Index = () => {
 };
 
 export default Index;
-
