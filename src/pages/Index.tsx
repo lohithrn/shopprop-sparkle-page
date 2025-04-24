@@ -13,6 +13,7 @@ import {
 import { useIsMobile } from "@/hooks/use-mobile";
 import Header from "@/components/Header";
 import TypeWriter from "@/components/TypeWriter";
+import SavingsBubbleChart from '@/components/SavingsBubbleChart';
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -183,6 +184,20 @@ const Index = () => {
           </div>
         </div>
       </div>
+      
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+            They Get It! Potential Savings on a $1M Property
+          </h2>
+          <div className="flex justify-center items-center">
+            <SavingsBubbleChart />
+          </div>
+          <p className="text-center text-gray-600 mt-8 max-w-2xl mx-auto">
+            See how much you could save on your next property purchase. Our innovative approach helps you maximize your investment while minimizing costs.
+          </p>
+        </div>
+      </section>
     </>
   );
 };
