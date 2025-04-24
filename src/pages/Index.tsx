@@ -77,13 +77,13 @@ const Index = () => {
                 />
               </div>
               <div className="mt-8 flex flex-wrap gap-4 justify-center">
-                <Button className="bg-white text-[#1A659E] hover:bg-gray-100 flex items-center gap-2">
+                <Button className="bg-[radial-gradient(circle_at_center,_#1A659E_0%,_#2A95E5_100%)] text-white hover:bg-[radial-gradient(circle_at_center,_#1A659E_10%,_#2A95E5_90%)] flex items-center gap-2">
                   <ShoppingCart className="h-5 w-5" /> Start Buying
                 </Button>
-                <Button className="bg-[#1A659E] text-white hover:bg-[#1A659E]/90 flex items-center gap-2">
+                <Button className="bg-[radial-gradient(circle_at_center,_#1EAEDB_0%,_#0FA0CE_100%)] text-white hover:bg-[radial-gradient(circle_at_center,_#1EAEDB_10%,_#0FA0CE_90%)] flex items-center gap-2">
                   <HandCoins className="h-5 w-5" /> Start Selling
                 </Button>
-                <Button className="bg-white border border-[#1A659E] text-[#1A659E] hover:bg-gray-50 flex items-center gap-2">
+                <Button className="bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#F0F0F0_100%)] border border-[#1A659E] text-[#1A659E] hover:bg-[radial-gradient(circle_at_center,_#F8F8F8_0%,_#E8E8E8_100%)] flex items-center gap-2">
                   <UserPlus className="h-5 w-5" /> Join
                 </Button>
               </div>
