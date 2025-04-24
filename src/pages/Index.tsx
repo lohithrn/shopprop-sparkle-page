@@ -34,13 +34,11 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen bg-white text-white">
-      {/* Hero Section with Diagonal Design */}
       <div className="relative h-screen">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] transform -skew-y-6 origin-top-left z-0" />
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col">
-          {/* Title and Search Sections */}
           <div className="h-[20vh] flex items-center justify-center">
-            <h1 className="text-[min(8vw,4rem)] md:text-[min(4.5vw,4rem)] font-bold leading-tight text-center max-w-4xl text-white">
+            <h1 className="text-[min(9vw,4.4rem)] md:text-[min(4.95vw,4.4rem)] font-bold leading-tight text-center max-w-4xl text-white">
               Real Estate{" "}
               <span className="bg-clip-text text-transparent bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#1EAEDB_100%)]">
                 Commission
@@ -69,9 +67,7 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Bottom Section - 60vh */}
           <div className="h-[60vh] grid md:grid-cols-2 gap-8 items-start">
-            {/* Pricing Plans - Match height to image section */}
             <div className="flex flex-col">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-[400px]">
                 <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 flex flex-col justify-between h-full">
