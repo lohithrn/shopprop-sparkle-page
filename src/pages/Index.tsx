@@ -77,10 +77,28 @@ const Index = () => {
                 />
               </div>
               <div className="mt-8 flex justify-center gap-6">
-                <Button className="bg-[radial-gradient(circle_at_center,_#1A659E_0%,_#2A95E5_100%)] text-white hover:bg-[radial-gradient(circle_at_center,_#1A659E_10%,_#2A95E5_90%)] flex items-center gap-2 px-8 py-4 rounded-xl text-base">
+                <Button 
+                  className="bg-[radial-gradient(circle_at_center,_#1A659E_0%,_#2A95E5_100%)] 
+                             text-white 
+                             hover:bg-[radial-gradient(circle_at_center,_#1A659E_10%,_#2A95E5_90%)] 
+                             flex items-center gap-2 px-8 py-4 rounded-xl text-base 
+                             border-2 border-[#7E69AB] 
+                             shadow-[0_4px_6px_rgba(126,105,171,0.5)] 
+                             hover:shadow-[0_6px_8px_rgba(126,105,171,0.7)]
+                             transition-all duration-300"
+                >
                   <ShoppingCart className="h-6 w-6 mr-2" /> Start Buying
                 </Button>
-                <Button className="bg-[radial-gradient(circle_at_center,_#1EAEDB_0%,_#0FA0CE_100%)] text-white hover:bg-[radial-gradient(circle_at_center,_#1EAEDB_10%,_#0FA0CE_90%)] flex items-center gap-2 px-8 py-4 rounded-xl text-base">
+                <Button 
+                  className="bg-[radial-gradient(circle_at_center,_#1EAEDB_0%,_#0FA0CE_100%)] 
+                             text-white 
+                             hover:bg-[radial-gradient(circle_at_center,_#1EAEDB_10%,_#0FA0CE_90%)] 
+                             flex items-center gap-2 px-8 py-4 rounded-xl text-base 
+                             border-2 border-[#7E69AB] 
+                             shadow-[0_4px_6px_rgba(126,105,171,0.5)] 
+                             hover:shadow-[0_6px_8px_rgba(126,105,171,0.7)]
+                             transition-all duration-300"
+                >
                   <HandCoins className="h-6 w-6 mr-2" /> Start Selling
                 </Button>
               </div>
