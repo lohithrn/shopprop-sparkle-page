@@ -39,12 +39,6 @@ const Index = () => {
               Real Estate, Reimagined.
             </h1>
             
-            <div className="max-w-2xl">
-              <p className="text-xl md:text-2xl mb-8 text-[#E2F0FF]/90">
-                One platform. Two powerful choices designed for your success in the modern real estate market.
-              </p>
-            </div>
-
             {/* Search Bar */}
             <div className="mt-8">
               <div className="flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
@@ -58,6 +52,13 @@ const Index = () => {
                   Search
                 </Button>
               </div>
+            </div>
+
+            {/* Platform Description */}
+            <div className="max-w-2xl mt-4">
+              <p className="text-base md:text-lg text-[#E2F0FF]/90 text-center">
+                One platform. Two powerful choices designed for your success in the modern real estate market.
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mt-12">
