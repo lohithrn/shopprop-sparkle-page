@@ -1,10 +1,14 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { 
   Search, 
   ShoppingCart,
   HandCoins,
-  Phone
+  Phone,
+  Star,
+  ShieldCheck,
+  BadgeDollarSign
 } from "lucide-react";
 
 const Index = () => {
