@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { 
@@ -136,6 +135,10 @@ const Index = () => {
                       <li className="flex items-center gap-2 text-white">
                         <ShieldCheck className="h-4 w-4 text-white" />
                         <span className="text-sm text-white">Lowest Seller Fees</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-white">
+                        <ShieldCheck className="h-4 w-4 text-white" />
+                        <span className="text-sm text-white">Pay Low Commission</span>
                       </li>
                     </ul>
                   </div>
