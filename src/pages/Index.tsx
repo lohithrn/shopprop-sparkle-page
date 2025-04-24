@@ -37,7 +37,7 @@ const Index = () => {
       <div className="relative h-screen">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] transform -skew-y-6 origin-top-left z-0" />
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col">
-          <div className="h-[20vh] flex items-center justify-center">
+          <div className="h-[15vh] flex items-center justify-center">
             <h1 className="text-[min(9vw,4.4rem)] md:text-[min(4.95vw,4.4rem)] font-bold leading-tight text-center max-w-4xl text-white">
               Real Estate{" "}
               <span className="bg-clip-text text-transparent bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#1EAEDB_100%)]">
@@ -47,7 +47,7 @@ const Index = () => {
             </h1>
           </div>
 
-          <div className="h-[20vh] flex flex-col items-center justify-center gap-6">
+          <div className="h-[25vh] flex flex-col items-center justify-center gap-6">
             <div className="w-full flex justify-center px-4">
               <div className="w-full max-w-xl flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
                 <Search className="h-4 w-4 sm:h-5 sm:w-5 text-white/70 ml-4" />
