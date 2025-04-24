@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -13,7 +12,6 @@ import {
 } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import Header from "@/components/Header";
-import TypeWriter from "@/components/TypeWriter";
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -31,11 +29,10 @@ const Index = () => {
             <div className="pt-4 md:pt-8 flex items-center justify-center">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight text-center max-w-4xl text-white">
                 Real Estate{" "}
-                <TypeWriter 
-                  text="Commission Reimagined."
-                  className="bg-clip-text text-transparent bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#1EAEDB_100%)]" 
-                  delay={150}
-                />
+                <span className="bg-clip-text text-transparent bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#1EAEDB_100%)]">
+                  Commission
+                </span>{" "}
+                Reimagined.
               </h1>
             </div>
 
