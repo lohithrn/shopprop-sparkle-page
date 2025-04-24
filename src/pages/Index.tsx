@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { 
@@ -159,7 +160,7 @@ const Index = () => {
                         </li>
                       </ul>
                     </div>
-                    <Button className="w-full bg-[#1A659E] text-white border border-white hover:bg-[#1A659E]/90">
+                    <Button className="w-full bg-[#1A659E] text-white border border-white hover:bg-[#1A659E]/90 text-lg font-bold py-4 rounded-2xl transition-all duration-300 ease-in-out transform hover:scale-[1.02] shadow-lg">
                       Savings Calculator
                     </Button>
                   </div>
