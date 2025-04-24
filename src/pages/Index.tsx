@@ -48,20 +48,20 @@ const Index = () => {
                 Reimagined.
               </h1>
 
-              {/* Search Bar */}
-              <div className="mb-4 flex justify-center">
-                <div className="w-full max-w-xl flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
-                  <Search className="h-4 w-4 sm:h-5 sm:w-5 text-white/70 ml-4" />
-                  <input 
-                    type="text" 
-                    placeholder="Search properties..." 
-                    className="bg-transparent border-none outline-none flex-1 px-4 text-sm sm:text-base text-white placeholder-white/70"
-                  />
-                  <Button className="rounded-full bg-white text-[#1A659E] hover:bg-white/90 text-sm sm:text-base">
-                    Search
-                  </Button>
-                </div>
+            {/* Search Bar */}
+            <div className="flex justify-center mb-4">
+              <div className="w-full max-w-xl flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 border border-white/20">
+                <Search className="h-4 w-4 sm:h-5 sm:w-5 text-white/70 ml-4" />
+                <input 
+                  type="text" 
+                  placeholder="Search properties..." 
+                  className="bg-transparent border-none outline-none flex-1 px-4 text-sm sm:text-base text-white placeholder-white/70"
+                />
+                <Button className="rounded-full bg-white text-[#1A659E] hover:bg-white/90 text-sm sm:text-base">
+                  Search
+                </Button>
               </div>
+            </div>
 
               {/* Platform Description */}
               <div className="max-w-2xl mb-8 text-center">
