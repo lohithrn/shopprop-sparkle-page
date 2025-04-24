@@ -12,17 +12,30 @@ const TypeWriter = ({ text, className = "", delay = 100, preserveHtml = false }:
   const [displayText, setDisplayText] = useState("");
 
   useEffect(() => {
-    let index = 0;
-    const timer = setInterval(() => {
-      if (index < text.length) {
-        setDisplayText(text.substring(0, index + 1));
-        index++;
-      } else {
-        clearInterval(timer);
-      }
-    }, delay);
+    let mounted = true;
 
-    return () => clearInterval(timer);
+    const typeText = async () => {
+      while (mounted) {
+        // Type the text
+        for (let i = 0; i <= text.length; i++) {
+          if (!mounted) break;
+          await new Promise(resolve => setTimeout(resolve, delay));
+          setDisplayText(text.substring(0, i));
+        }
+
+        // Wait for 10 seconds before starting again
+        if (mounted) {
+          await new Promise(resolve => setTimeout(resolve, 10000));
+          setDisplayText("");
+        }
+      }
+    };
+
+    typeText();
+
+    return () => {
+      mounted = false;
+    };
   }, [text, delay]);
 
   if (preserveHtml) {
