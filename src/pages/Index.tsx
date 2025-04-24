@@ -1,9 +1,8 @@
-
 import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Search, Home, Wallet, BarChart4, Tool, Award, Phone } from "lucide-react";
+import { Search, Home, Wallet, BarChart4, Wrench, Award, Phone } from "lucide-react";
 
 const Index = () => {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
@@ -37,7 +36,7 @@ const Index = () => {
     { name: "Premium Service", icon: <Award className="h-5 w-5" /> },
     { name: "Big Buyer Rebates", icon: <Wallet className="h-5 w-5" /> },
     { name: "Low Selling Fees", icon: <BarChart4 className="h-5 w-5" /> },
-    { name: "Tools", icon: <Tool className="h-5 w-5" /> },
+    { name: "Tools", icon: <Wrench className="h-5 w-5" /> },
     { name: "Top Results", icon: <Award className="h-5 w-5" /> },
     { name: "Contact Us", icon: <Phone className="h-5 w-5" /> }
   ];
