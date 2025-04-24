@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -32,9 +31,13 @@ const Index = () => {
               <h1 className="text-4xl md:text-6xl font-bold leading-tight text-center max-w-4xl text-white">
                 Real Estate{" "}
                 <span className="bg-clip-text text-transparent bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#1EAEDB_100%)]">
-                  <TypeWriter text="Commission" delay={80} />
+                  <TypeWriter text="Commission" delay={80} className="bg-clip-text text-transparent bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#1EAEDB_100%)]" />
                 </span>{" "}
-                <TypeWriter text="Reimagined." delay={80} className="bg-clip-text text-transparent bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#1EAEDB_100%)]" />
+                <TypeWriter 
+                  text="Reimagined." 
+                  delay={80} 
+                  className="bg-clip-text text-transparent bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#1EAEDB_100%)]" 
+                />
               </h1>
             </div>
 
