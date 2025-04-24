@@ -90,7 +90,7 @@ const Index = () => {
             </div>
 
             <div className="flex flex-col">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-[400px]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-[200px]">
                 <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 flex flex-col justify-between h-full">
                   <div>
                     <div className="flex items-center gap-2 mb-3">
