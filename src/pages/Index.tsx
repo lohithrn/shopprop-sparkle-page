@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { 
@@ -25,7 +26,7 @@ const Index = () => {
         <div className="relative h-full min-h-screen">
           <div className="absolute inset-0 bg-gradient-to-br from-[#1A659E] to-[#2A95E5] transform -skew-y-6 origin-top-left z-0" />
           <div className="relative z-10 container mx-auto px-4 py-8 h-full flex flex-col">
-            <div className="pt-8 md:pt-16 flex items-center justify-center">
+            <div className="pt-4 md:pt-8 flex items-center justify-center">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight text-center max-w-4xl text-white">
                 Real Estate{" "}
                 <span className="bg-clip-text text-transparent bg-[radial-gradient(circle_at_center,_#FFFFFF_0%,_#1EAEDB_100%)]">
