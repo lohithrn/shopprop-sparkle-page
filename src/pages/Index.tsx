@@ -22,28 +22,55 @@ const Index = () => {
     const text2 = "Premium";
     let index1 = 0;
     let index2 = 0;
+    let isTyping1 = true;
+    let isTyping2 = true;
+    let typingTimeout1: NodeJS.Timeout;
+    let typingTimeout2: NodeJS.Timeout;
+    let pauseTimeout1: NodeJS.Timeout;
+    let pauseTimeout2: NodeJS.Timeout;
 
     const type1 = () => {
-      if (index1 < text1.length) {
-        setFreemiumText(prev => prev + text1.charAt(index1));
-        index1++;
-        setTimeout(type1, 150);
+      if (isTyping1) {
+        if (index1 < text1.length) {
+          setFreemiumText(prev => prev + text1.charAt(index1));
+          index1++;
+          typingTimeout1 = setTimeout(type1, 150);
+        } else {
+          pauseTimeout1 = setTimeout(() => {
+            setFreemiumText("");
+            index1 = 0;
+            type1();
+          }, 10000);
+        }
       }
     };
 
     const type2 = () => {
-      if (index2 < text2.length) {
-        setPremiumText(prev => prev + text2.charAt(index2));
-        index2++;
-        setTimeout(type2, 150);
+      if (isTyping2) {
+        if (index2 < text2.length) {
+          setPremiumText(prev => prev + text2.charAt(index2));
+          index2++;
+          typingTimeout2 = setTimeout(type2, 150);
+        } else {
+          pauseTimeout2 = setTimeout(() => {
+            setPremiumText("");
+            index2 = 0;
+            type2();
+          }, 10000);
+        }
       }
     };
 
-    // Start typing with a small delay
     setTimeout(type1, 500);
     setTimeout(type2, 1000);
 
     return () => {
+      isTyping1 = false;
+      isTyping2 = false;
+      clearTimeout(typingTimeout1);
+      clearTimeout(typingTimeout2);
+      clearTimeout(pauseTimeout1);
+      clearTimeout(pauseTimeout2);
       setFreemiumText("");
       setPremiumText("");
     };
