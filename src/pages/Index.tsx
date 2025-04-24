@@ -13,7 +13,6 @@ import {
 import { useIsMobile } from "@/hooks/use-mobile";
 import Header from "@/components/Header";
 import TypeWriter from "@/components/TypeWriter";
-import { BadgeDollarSign } from "lucide-react";
 
 const Index = () => {
   const isMobile = useIsMobile();
