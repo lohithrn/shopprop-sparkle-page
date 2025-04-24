@@ -82,7 +82,6 @@ const Index = () => {
                              text-white 
                              hover:bg-[radial-gradient(circle_at_center,_#1A659E_10%,_#2A95E5_90%)] 
                              flex items-center gap-2 px-8 py-4 rounded-xl text-base 
-                             border-2 border-black 
                              shadow-[0_4px_6px_rgba(126,105,171,0.5)] 
                              hover:shadow-[0_6px_8px_rgba(126,105,171,0.7)]
                              transition-all duration-300"
@@ -94,7 +93,6 @@ const Index = () => {
                              text-white 
                              hover:bg-[radial-gradient(circle_at_center,_#1EAEDB_10%,_#0FA0CE_90%)] 
                              flex items-center gap-2 px-8 py-4 rounded-xl text-base 
-                             border-2 border-black 
                              shadow-[0_4px_6px_rgba(126,105,171,0.5)] 
                              hover:shadow-[0_6px_8px_rgba(126,105,171,0.7)]
                              transition-all duration-300"
